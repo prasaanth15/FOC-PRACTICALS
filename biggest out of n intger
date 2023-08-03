@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n, num, biggest;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printf("Enter the integers (separated by spaces): ");
+    scanf("%d", &biggest);
+    for (int i = 1; i < n; i++) {
+        scanf("%d", &num);
+        if (num > biggest) {
+            biggest = num;
+        }
+    }
+
+    printf("The biggest number is: %d\n", biggest);
+    return 0;
+}
